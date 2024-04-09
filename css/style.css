@@ -418,12 +418,18 @@ section#contact {
   align-items: center;
   padding-left: 15px;
   border-radius: 9px 0 0 9px;
+  overflow: hidden;
 }
 
 .containerForBar {
   background-color: #d4dfdf;
   height: 100%;
   border-radius: 9px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  color: var(--dark-green);
+  font-weight: 400;
 }
 
 #experience .container {

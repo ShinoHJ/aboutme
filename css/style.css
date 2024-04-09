@@ -698,8 +698,8 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
   outline: none;
-  box-shadow: -1px -1px 4px #00000010 inset,
-    0px 0px 4px #00000020 inset
+  box-shadow: 1px 1px 4px #00000070 inset,
+    -1px -1px 4px #ffffff20 inset;
 }
 
 input::placeholder,

@@ -36,85 +36,25 @@ h4 {
   font-weight: 300;
 }
 
-.bg-colorful {
-  animation-name: bg-colorful;
-  animation-duration: 80s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+/* -------------------- */
+/* BACKGROUND ANIMATION */
+
+.bg-gradient {
   width: 100%;
   height: 100%;
-  position: relative;
-  z-index: -1;
+  filter: blur(200px);
+  /* background-image: linear-gradient(#4ddc9e, #5b37eb, #f1307e); */
+  background-image: linear-gradient(to left top, #adadad, #bcbcbc, #cbcbcb, #dadada, #eaeaea, #ecedf1, #ecf1f9, #e9f6ff, #c8f4ff, #a0f2ff, #75f1f2, #50eed9);
+  animation: rotate 10s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
 }
 
-@keyframes bg-colorful {
+@keyframes rotate {
   0% {
-    background-image: linear-gradient(to left top, #adadad, #bcbcbc, #cbcbcb, #dadada, #eaeaea, #ecedf1, #ecf1f9, #e9f6ff, #c8f4ff, #a0f2ff, #75f1f2, #50eed9);
-    opacity: 0.6;
+    transform: rotate(0deg);
   }
-
-  7.142% {
-    opacity: 0;
-  }
-
-
-  14.285% {
-    background-image: linear-gradient(to left, #adadad, #bcbcbc, #cbcbcb, #dadada, #eaeaea, #ecedf1, #ecf1f9, #e9f6ff, #c8f4ff, #a0f2ff, #75f1f2, #50eed9);
-    opacity: 0.6;
-  }
-
-  21.392% {
-    opacity: 0;
-  }
-
-  28.571% {
-    background-image: linear-gradient(to left bottom, #adadad, #bcbcbc, #cbcbcb, #dadada, #eaeaea, #ecedf1, #ecf1f9, #e9f6ff, #c8f4ff, #a0f2ff, #75f1f2, #50eed9);
-    opacity: 0.6;
-  }
-
-  35.713% {
-    opacity: 0;
-  }
-
-  42.857% {
-    background-image: linear-gradient(to bottom, #adadad, #bcbcbc, #cbcbcb, #dadada, #eaeaea, #ecedf1, #ecf1f9, #e9f6ff, #c8f4ff, #a0f2ff, #75f1f2, #50eed9);
-    opacity: 0.6;
-  }
-
-  49.997% {
-    opacity: 0;
-  }
-
-  57.142% {
-    background-image: linear-gradient(to right bottom, #adadad, #bcbcbc, #cbcbcb, #dadada, #eaeaea, #ecedf1, #ecf1f9, #e9f6ff, #c8f4ff, #a0f2ff, #75f1f2, #50eed9);
-    opacity: 0.6;
-  }
-
-  64.284% {
-    opacity: 0;
-  }
-
-  71.428% {
-    background-image: linear-gradient(to right, #adadad, #bcbcbc, #cbcbcb, #dadada, #eaeaea, #ecedf1, #ecf1f9, #e9f6ff, #c8f4ff, #a0f2ff, #75f1f2, #50eed9);
-    opacity: 0.6;
-  }
-
-  78.57% {
-    opacity: 0;
-  }
-
-  85.714% {
-    background-image: linear-gradient(to right top, #adadad, #bcbcbc, #cbcbcb, #dadada, #eaeaea, #ecedf1, #ecf1f9, #e9f6ff, #c8f4ff, #a0f2ff, #75f1f2, #50eed9);
-    opacity: 0.6;
-  }
-
-  92.856% {
-    opacity: 0;
-  }
-
   100% {
-    background-image: linear-gradient(to top, #adadad, #bcbcbc, #cbcbcb, #dadada, #eaeaea, #ecedf1, #ecf1f9, #e9f6ff, #c8f4ff, #a0f2ff, #75f1f2, #50eed9);
-    opacity: 0.6;
+    transform: rotate(360deg);
   }
 }
 
@@ -132,6 +72,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #mainVisual .container {

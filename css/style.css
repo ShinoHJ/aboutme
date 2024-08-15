@@ -726,7 +726,7 @@ input[type="submit"]:hover {
 
 .side_front {
   position: relative;
-  border: 1px solid #333a38;
+  border: 1px solid #3C3633;
 }
 
 .side_front img {
@@ -736,6 +736,9 @@ input[type="submit"]:hover {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
+#portfolio {
+  background: #f7fafa;
+}
 #portfolio .pic img {
   height: 800px;
   object-fit: cover;
